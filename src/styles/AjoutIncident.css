@@ -1,0 +1,160 @@
+/* AjoutIncident.css */
+
+.incident-container {
+
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.incident-form {
+  width: 1200px;
+  background-color: white;
+  margin-top: 70px;
+  margin-left: 145px;
+  height: 80%;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajoutez ces styles à votre fichier AjoutIncident.css */
+
+.icon {
+  margin-right: 8px;
+  color: #555;
+  vertical-align: middle;
+}
+
+.button-icon {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.incident-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #444;
+}
+
+.incident-success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 0.75rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.incident-error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 0.75rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.incident-field-group {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+
+.incident-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.incident-label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.incident-input,
+.incident-select,
+.incident-textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.incident-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.incident-form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  gap: 1rem; /* Ajout d'un espace entre les boutons */
+}
+
+.incident-submit-button,
+.incident-cancel-button {
+  padding: 1rem 0.5rem; /* Augmentation significative du padding */
+  border: none;
+  border-radius: 8px; /* Bordure légèrement plus arrondie */
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transition sur toutes les propriétés */
+  font-size: 1rem; /* Taille de police augmentée */
+  width: 300px; /* Largeur augmentée à 300px */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.incident-title{
+  color: #007BFF;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  margin-top: -20px;
+  position: relative;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+}
+.incident-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #007BFF, #00a8ff);
+  margin: 10px auto 0;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+.incident-submit-button {
+  width: 400px;
+  padding: 15px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2196f3, #1976d2);
+  color: white;
+}
+
+
+.incident-submit-button:hover {
+  background: linear-gradient(135deg, #1976d2, #1565c0);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.15);
+}
+
+.incident-cancel-button {
+  width: 400px;
+  background: linear-gradient(135deg, #b24a4a, #c84747);
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+.incident-cancel-button:hover {
+  background: linear-gradient(135deg, #d2a0a0, #ec8585);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.15);
+}

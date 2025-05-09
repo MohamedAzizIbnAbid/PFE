@@ -1,0 +1,44 @@
+/* Notification Alert Styling for New Account Request */
+.notification-alert {
+    position: fixed;
+    top: 80px; /* Adjust based on Navbar height */
+    right: 20px;
+    background-color: #28a745; /* Green for success */
+    color: #ffffff;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 2000; /* Above other content */
+    min-width: 250px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .notification-alert:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .notification-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 12px;
+  }
+  
+  .notification-content span {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .notification-timestamp {
+    font-size: 0.85rem;
+    font-weight: 400;
+    
+  
+  }

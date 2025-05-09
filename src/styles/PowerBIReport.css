@@ -1,0 +1,71 @@
+.powerbi-container {
+  width: 1530px;
+  margin-top: 90px;
+  height: 80vh;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ffffff, #f4f4f4);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .powerbi-container iframe {
+    width: 100%;
+    height: 75vh;
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .export-buttons {
+    position: relative;
+    z-index: 1000;
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .export-button, .refresh-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .export-button:hover, .refresh-button:hover {
+    background-color: #45a049;
+  }
+  
+  
+  .powerbi-container iframe:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .powerbi-container {
+      padding: 15px;
+    }
+  
+    .powerbi-container iframe {
+      height: 60vh;
+    }
+  }
+  
